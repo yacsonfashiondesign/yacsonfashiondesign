@@ -1,1 +1,25 @@
-
+{
+  "products": [
+    {
+      "title": "Premium Jallabiya",
+      "image": "/YACSON/jallabiya.jpg",
+      "price": "Contact for Price",
+      "description": "Elegant design for special occasions.",
+      "whatsapp": "2349060853678"
+    },
+    {
+      "title": "Premium Men's Wear",
+      "image": "/YACSON/jallabiya(2).jpg",
+      "price": "Contact for Price",
+      "description": "Simple, smart and comfortable styles.",
+      "whatsapp": "2347044376838"
+    },
+    {
+      "title": "Premium Jallabiya",
+      "image": "/YACSON/jallabiya (3).jpg",
+      "price": "Contact for Price",
+      "description": "Upgrade your style with quality fashion.",
+      "whatsapp": "2347044376838"
+    }
+  ]
+}

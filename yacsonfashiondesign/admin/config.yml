@@ -1,0 +1,42 @@
+backend:
+  name: github
+  repo: yacsonfashiondesign/yacsonfashiondesign
+  branch: main
+
+site_url: https://yacsonfashiondesign.netlify.app
+display_url: https://yacsonfashiondesign.netlify.app
+publish_mode: simple
+
+# These paths are relative to the GitHub repository root.
+media_folder: yacsonfashiondesign/uploads
+public_folder: /uploads
+
+collections:
+  - name: catalog
+    label: Kayan sayarwa
+    files:
+      - name: products
+        label: Jerin kaya
+        file: yacsonfashiondesign/data/products.json
+        format: json
+        fields:
+          - name: products
+            label: Kaya
+            widget: list
+            fields:
+              - name: title
+                label: Sunan kaya
+                widget: string
+              - name: image
+                label: Hoton kaya
+                widget: image
+              - name: price
+                label: Farashi
+                widget: string
+              - name: description
+                label: Bayani
+                widget: text
+              - name: whatsapp
+                label: WhatsApp number (country code, no +)
+                widget: string
+                required: false

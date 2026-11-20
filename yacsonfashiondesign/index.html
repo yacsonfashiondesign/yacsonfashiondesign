@@ -1,203 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YACSON FASHION DESIGN</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f8f5f0;
-            color: #222;
-        }
-
-        header {
-            background: #171717;
-            color: white;
-            text-align: center;
-            padding: 25px 10px;
-        }
-
-        header h1 {
-            color: #d4af37;
-            margin-bottom: 10px;
-        }
-
-        nav {
-            background: #d4af37;
-            padding: 14px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #171717;
-            text-decoration: none;
-            margin: 12px;
-            font-weight: bold;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 55px 20px;
-            background: #e9dfd0;
-        }
-
-        .hero h2 {
-            font-size: 32px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            margin-bottom: 22px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #171717;
-            color: white;
-            padding: 12px 22px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .products {
-            padding: 35px 20px;
-            text-align: center;
-        }
-
-        .products h2 {
-            margin-bottom: 25px;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            width: 280px;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px #ddd;
-        }
-
-        .card img {
-            width: 100%;
-            height: 230px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .card h3 {
-            margin: 12px 0;
-        }
-
-        .price {
-            color: #997500;
-            font-weight: bold;
-            margin: 12px;
-        }
-
-        .card a {
-            margin-top: 8px;
-        }
-
-        .contact {
-            text-align: center;
-            padding: 35px 15px;
-            background: #e9dfd0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 18px;
-            background: #171717;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium Jallabiyas and stylish men's fashion from YACSON FASHION DESIGN.">
+  <title>YACSON FASHION DESIGN</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f8f5f0; color: #222; line-height: 1.5; }
+    header { background: #171717; color: white; text-align: center; padding: 25px 10px; }
+    header h1 { color: #d4af37; margin-bottom: 10px; }
+    nav { background: #d4af37; padding: 14px; text-align: center; }
+    nav a { color: #171717; text-decoration: none; margin: 12px; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .hero { text-align: center; padding: 55px 20px; background: #e9dfd0; }
+    .hero h2 { font-size: 32px; margin-bottom: 15px; }
+    .hero p { margin-bottom: 22px; }
+    .btn { display: inline-block; background: #171717; color: white; padding: 12px 22px; text-decoration: none; border-radius: 5px; }
+    .btn:hover { background: #3b3b3b; }
+    .products { padding: 35px 20px; text-align: center; }
+    .products h2 { margin-bottom: 25px; }
+    .container { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+    .card { background: white; width: 280px; padding: 15px; border-radius: 10px; box-shadow: 0 3px 10px #ddd; }
+    .card img { width: 100%; height: 230px; object-fit: cover; border-radius: 8px; background: #eee; }
+    .card h3 { margin: 12px 0; }
+    .price { color: #997500; font-weight: bold; margin: 12px; }
+    .card a { margin-top: 8px; }
+    .contact { text-align: center; padding: 35px 15px; background: #e9dfd0; }
+    footer { text-align: center; padding: 18px; background: #171717; color: white; }
+    footer a { color: #d4af37; }
+    .loading, .error, .empty { padding: 20px; color: #555; }
+    @media (max-width: 600px) {
+      nav a { display: inline-block; margin: 7px; }
+      .hero h2 { font-size: 27px; }
+      .card { width: min(100%, 340px); }
+    }
+  </style>
 </head>
-
 <body>
+  <header>
+    <h1>YACSON FASHION DESIGN</h1>
+    <p>Elegance • Quality • Style</p>
+  </header>
 
-    <header>
-        <h1>YACSON FASHION DESIGN</h1>
-        <p>Elegance • Quality • Style</p>
-    </header>
+  <nav aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <section class="hero" id="home">
+    <h2>Look Smart, Dress Better!</h2>
+    <p>Discover premium Jallabiyas and stylish men's fashion.</p>
+    <a href="#products" class="btn">Explore Our Collection</a>
+  </section>
 
-    <section class="hero" id="home">
-        <h2>Look Smart, Dress Better!</h2>
-        <p>Discover premium Jallabiyas and stylish men's fashion.</p>
-        <a href="#products" class="btn">Explore Our Collection</a>
-    </section>
+  <section class="products" id="products">
+    <h2>Our Latest Collection</h2>
+    <div class="container" id="product-list" aria-live="polite">
+      <p class="loading">Loading our collection...</p>
+    </div>
+  </section>
 
-    <section class="products" id="products">
-        <h2>Our Latest Collection</h2>
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Want to look different? Order your favourite style today!</p>
+    <br>
+    <a class="btn" href="https://wa.me/2347044376838" target="_blank" rel="noopener">Chat With Us on WhatsApp</a>
+  </section>
 
-        <div class="container">
+  <footer>
+    <p>&copy; <span id="year"></span> YACSON FASHION DESIGN. All rights reserved.</p>
+    <p style="margin-top:8px;font-size:12px"><a href="/admin/">Admin</a></p>
+  </footer>
 
-            <div class="card">
-                <img src="YACSON/jallabiya.jpg" alt="premium jallabiya">"
-                     
-                <h3>Premium Jallabiya</h3>
-                <p>Elegant design for special occasions.</p>
-                <p class="price">Contact for Price</p>
-                <a class="btn"
-                   href="https://wa.me/2349060853678">
-                   Order Now
-                </a>
-            </div>
+  <script>
+    const productList = document.getElementById('product-list');
+    const defaultWhatsapp = '2347044376838';
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-            <div class="card">
-            <img src="YACSON/jallabiya(2).jpg"alt="Classic men's fashion">
-                <h3>premium  Men's Wear</h3>
-                <p>Simple, smart and comfortable styles.</p>
-                <p class="price">Contact for Price</p>
-                <a class="btn"
-                   href="https://wa.me/2347044376838">
-                   Order Now
-                </a>
-            </div>
+    function addProduct(product) {
+      const card = document.createElement('article');
+      card.className = 'card';
 
-            <div class="card">
-                <img src="YACSON/jallabiya (3).jpg" alt="premium jallabiya">
-                     
-                <h3>premium jallabiya</h3>
-                <p>Upgrade your style with quality fashion.</p>
-                <p class="price">Contact for Price</p>
-                <a class="btn"
-                   href="https://wa.me/2347044376838">
-                   Order Now
-                </a>
-            </div>
+      if (product.image) {
+        const image = document.createElement('img');
+        image.src = product.image;
+        image.alt = product.title || 'YACSON fashion item';
+        image.loading = 'lazy';
+        image.onerror = () => { image.style.display = 'none'; };
+        card.appendChild(image);
+      }
 
-        </div>
-    </section>
+      const title = document.createElement('h3');
+      title.textContent = product.title || 'Fashion item';
+      card.appendChild(title);
 
-    <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <p>Want to look different? Order your favourite style today!</p>
-        <br>
-        <a class="btn" href="https://wa.me/2347044376838">
-            Chat With Us on WhatsApp
-        </a>
-    </section>
+      const description = document.createElement('p');
+      description.textContent = product.description || '';
+      card.appendChild(description);
 
-   
+      const price = document.createElement('p');
+      price.className = 'price';
+      price.textContent = product.price || 'Contact for Price';
+      card.appendChild(price);
+
+      const orderLink = document.createElement('a');
+      orderLink.className = 'btn';
+      const whatsapp = String(product.whatsapp || defaultWhatsapp).replace(/\D/g, '');
+      orderLink.href = 'https://wa.me/' + (whatsapp || defaultWhatsapp);
+      orderLink.target = '_blank';
+      orderLink.rel = 'noopener';
+      orderLink.textContent = 'Order Now';
+      card.appendChild(orderLink);
+
+      productList.appendChild(card);
+    }
+
+    fetch('/data/products.json', { cache: 'no-store' })
+      .then(response => {
+        if (!response.ok) throw new Error('Products file could not be loaded');
+        return response.json();
+      })
+      .then(data => {
+        productList.innerHTML = '';
+        const products = Array.isArray(data.products) ? data.products : [];
+        if (products.length === 0) {
+          productList.innerHTML = '<p class="empty">New products will be added soon.</p>';
+          return;
+        }
+        products.forEach(addProduct);
+      })
+      .catch(error => {
+        console.error(error);
+        productList.innerHTML = '<p class="error">Our collection is temporarily unavailable. Please contact us on WhatsApp.</p>';
+      });
+  </script>
 </body>
 </html>
